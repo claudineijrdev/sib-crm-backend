@@ -1,0 +1,9 @@
+### Register a new user and tenant
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test Tenant",
+  "email": "test@example.com",
+  "password": "password123"
+}
