@@ -7,7 +7,6 @@ import (
 	"github.com/google/uuid"
 )
 
-// User represents the GORM model for a user.
 type User struct {
 	ID            uuid.UUID      `gorm:"type:uuid;primary_key;default:gen_random_uuid()" json:"id"`
 	TenantID      uuid.UUID      `gorm:"type:uuid;not null" json:"tenant_id"`
